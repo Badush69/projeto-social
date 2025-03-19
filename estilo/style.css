@@ -6,6 +6,7 @@ body{
     background-size: 100% 100%;
     height: 98.3vh;
 }
+
 div#cell{
     background-image: url('../imagens/frame-iphone.png');
     background-size: 100% 100%;
@@ -16,15 +17,32 @@ div#cell{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-iframe#home{
-    width: 290px;
+
+iframe#framecell{
+    width: 285px;
     height: 440px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 img{
     width: 70px;
     height: 70px;
+    border-radius: 50%;
+}
+
+img:hover{
+    border-radius: 30%;
+    transition-duration: 1s ,2s;
+    transform: scale(1.2); /* 1 = 100% | 1.2 - 120% */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul{
+    position: absolute;
+    list-style-type: none;
+    left: 94%;
 }
